@@ -1,0 +1,23 @@
+<h1>New downloadlink2</h1>
+
+<% form_for(@downloadlink2) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.label :downloadlink %><br />
+    <%= f.text_field :downloadlink %>
+  </p>
+  <p>
+    <%= f.label :isvalid %><br />
+    <%= f.check_box :isvalid %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', downloadlink2s_path %>

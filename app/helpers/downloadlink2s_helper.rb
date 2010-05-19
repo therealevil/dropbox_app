@@ -1,0 +1,2 @@
+module Downloadlink2sHelper
+end

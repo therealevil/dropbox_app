@@ -1,0 +1,18 @@
+<p>
+  <b>Description:</b>
+  <%=h @downloadlink.description %>
+</p>
+
+<p>
+  <b>Downloadlink:</b>
+  <%=h @downloadlink.downloadlink %>
+</p>
+
+<p>
+  <b>Isvalid:</b>
+  <%=h @downloadlink.isvalid %>
+</p>
+
+
+<%= link_to 'Edit', edit_downloadlink_path(@downloadlink) %> |
+<%= link_to 'Back', downloadlinks_path %>

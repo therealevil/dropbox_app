@@ -1,0 +1,24 @@
+<h1>Editing downloadlink</h1>
+
+<% form_for(@downloadlink) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.label :downloadlink %><br />
+    <%= f.text_field :downloadlink %>
+  </p>
+  <p>
+    <%= f.label :isvalid %><br />
+    <%= f.check_box :isvalid %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @downloadlink %> |
+<%= link_to 'Back', downloadlinks_path %>

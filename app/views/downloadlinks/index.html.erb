@@ -1,0 +1,24 @@
+<h1>Listing downloadlinks</h1>
+
+<table>
+  <tr>
+    <th>Description</th>
+    <th>Downloadlink</th>
+    <th>Isvalid</th>
+  </tr>
+
+<% @downloadlinks.each do |downloadlink| %>
+  <tr>
+    <td><%=h downloadlink.description %></td>
+    <td><a href="<%=h downloadlink.downloadlink %>"><%=h downloadlink.downloadlink %></a></td>
+    <td><%=h downloadlink.isvalid %></td>
+    <td><%= link_to 'Show', downloadlink %></td>
+    <td><%= link_to 'Edit', edit_downloadlink_path(downloadlink) %></td>
+    <td><%= link_to 'Destroy', downloadlink, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New downloadlink', new_downloadlink_path %>
